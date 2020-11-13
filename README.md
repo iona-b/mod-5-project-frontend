@@ -4,7 +4,9 @@
 
 Always Balanced is a React and Redux Application, with a Rails backend which allows users to create a personalised schedule with the aim of helping them to better balance their work and home life. Always Balanced was created by Iona Brabender for her Mod 5 Project as part of Flatiron School's immersive Software Engineering Program.
 
-**To see the full demo, click [here](https://www.youtube.com/watch?v=qA_5IIvbeGw).**
+**To see the live demo, click [here](https://always-balanced-frontend.herokuapp.com/).**
+
+**To see the video demo, click [here](https://www.youtube.com/watch?v=qA_5IIvbeGw).**
 
 
 ## Installation
@@ -13,7 +15,7 @@ Please find the repositories here: https://github.com/iona-b/always-balanced-fro
 
 To run Always Balanced, first clone both the front and back end repositories into a single directory. 
 
-cd into the always-balanced-frontend directory and run the following commands in your terminal:
+cd into the always-balanced-backend directory and run the following commands in your terminal:
 
 ```
 bundle install          # to track and install the exact versions of ruby gems needed for Always Balanced
@@ -23,7 +25,7 @@ rails db:seed           # to seed your database
 rails server            # to start up your rails server
 ```
 
-You should now cd into the always-balanced-frontend directory and run the following command in your terminal:
+You should now cd into the always-balanced-frontend directory and run the following commands in your terminal:
 
 ```
 npm install             # to download the necessary React packages and dependencies

@@ -6,15 +6,15 @@ html, body {
     color: #2F4F4F;
     height: 100%;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
 }
 
 /* Nav Bar Styling  */
 
 #top-nav-bar {
-    height: 100px;
     background-color: #BDDFCC;
+    height: 100px;
     width: 100%;
     position: fixed;
     min-width: 1200px;
@@ -24,14 +24,13 @@ html, body {
 #always-balanced-long {
     height: 80px;
     margin-top: 10px;
-    position: absolute;
-    left: 38%;
 }
 
 #clock {
     position: absolute;
     right: 0%;
     top: 0%;
+    margin-top: 10px;
     font-size: 30px;
     text-align: right;
     margin-right: 20px;
@@ -41,7 +40,7 @@ html, body {
 }
 
 #nav-bar {
-    height:50px;
+    height: 50px;
     background-color: #BDDFCC;
     display: flex;
     justify-content: space-evenly;
@@ -68,20 +67,12 @@ html, body {
 
 .nav-bar-headings.login-nav-bar-heading {
     position: absolute;
-    left: 42%;
+    left: 43%;
 }
 
 .nav-bar-headings.signup-nav-bar-heading {
     position: absolute;
-    left: 52%;
-}
-
-.pre-login{
-    animation: menuFadeIn ease 5s;
-    -webkit-animation: menuFadeIn ease 5s;
-    -moz-animation: menuFadeIn ease 5s;
-    -o-animation: menuFadeIn ease 5s;
-    -ms-animation: menuFadeIn ease 5s;
+    right: 43%;
 }
 
 .nav-bar-divs:hover {
@@ -109,27 +100,39 @@ html, body {
 
 /* Home Styling */
 
-#home-div {
+.home-div {
     text-align: center;
-    height: 110%;
+    height: 100%;
     width: 100%;
-    position: relative;
+    position: fixed;
+    margin-top: 150px;
+    min-width: 1200px;
+    min-height: 800px;
 }
 
 #always-balanced-welcome {
-    position: absolute;
-    width: 1100px;
-    left: 11.5%;
-    top: 200px;
+    margin-top: 5%;
+    width: 50%;
     -webkit-animation: fadeinout 4s linear forwards;
     animation: fadeinout 4s linear forwards;
+    z-index: 5000;
 }
 
-#home-menu {
+#landing-page-menu {
+    margin-top: -20%;
+    position: relative;
+    animation: menuFadeIn ease 5s;
+    -webkit-animation: menuFadeIn ease 5s;
+    -moz-animation: menuFadeIn ease 5s;
+    -o-animation: menuFadeIn ease 5s;
+    -ms-animation: menuFadeIn ease 5s;
+}
+
+.menus {
     width: 400px;
-    position: absolute;
-    left: 36.5%;
-    margin-top: 200px;
+    z-index: 9999;
+    position: relative;
+    margin-top: 3%;
 }
 
 .landing-page-elements {
@@ -149,43 +152,44 @@ html, body {
 }
 
 #background-bottom-left {
-    position: fixed;
+    position: absolute;
     left: 0%;
-    width: 30%;
-    bottom: 50px;
-    min-width: 400px;
+    width: 25%;
+    bottom: 200px;
 }
 
 #background-top-right {
     position: absolute;
     right: 0%;
     width: 36%;
-    top: 150px;
-    min-width: 400px;
+    top: 0px;
+}
+
+.centred-divs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Form Styling  */
 
 .form-containers {
-    margin-top: 165px;
     text-align: center;
     width: 550px;
-    position: absolute;
-    left: 30%;
+    margin-top: 5%;
     overflow: scroll;
     overflow-y: auto;
     border: solid;
     border-radius: 5px;
     border-color: #BDDFCC;
     border-width: 5px;
-    height: 450px;
-    padding-top: 20px;
+    height: 60vh;
     background-color: #FFFAF0;
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
     -moz-animation: fadeIn ease 1s;
     -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;   
 }
 
 .form-headers {
@@ -253,6 +257,8 @@ html, body {
     opacity: 100%;
     color: #2F4F4F;
     cursor: pointer;
+    outline: none;
+    z-index: 9999;
 }
 
 .menu-buttons {
@@ -328,22 +334,27 @@ html, body {
     border-color: #FFFAF0;
 }
 
-#on-demo-page {
-    position: relative;
-    left: 45%;
-    top: 420px;
-}
-
 /* Task Related Styling */
 
+#create-schedule-container {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    min-width: 1482px;
+}
+
+#create-schedule-form-container {
+    margin-top: 0%;
+    width: 38%;
+    height: 74vh;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
 .show-tasks {
-    margin-top: 20px;
-    position: absolute;
-    width: 400px;
-    text-align: center;
-    height: 480px;
+    width: 30%;
+    height: 72vh;
     border-radius: 5px;
-    height: 450px;
     overflow: scroll;
     border: solid;
     border-color: #DDEBE4;
@@ -354,16 +365,6 @@ html, body {
     -moz-animation: fadeIn ease 1s;
     -o-animation: fadeIn ease 1s;
     -ms-animation: fadeIn ease 1s;
-}
-
-#existing-tasks-div {
-    right: 1%;
-    top: 150px;
-}
-
-#schedule-in-progress-div {
-    left: 1%;
-    top: 150px;
 }
 
 .tasks-items {
@@ -427,13 +428,6 @@ html, body {
     background-color: #FFFAF0;
 }
 
-
-#create-schedule-form-container {
-    position: absolute;
-    left: 30.5%;
-    margin-top: 170px;
-}
-
 #focus-mode {
     background-color:#2F4F4F;
     height: 100%;
@@ -492,9 +486,7 @@ html, body {
 .info-divs {
     text-align: center;
     width: 400px;
-    position: absolute;
-    left: 37%;
-    top: 165px;
+    margin-top: 5%;
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
     -moz-animation: fadeIn ease 1s;
@@ -516,17 +508,11 @@ html, body {
     -ms-animation: fadeIn ease 1s;
 }
 
-#profile-menu {
-    width: 400px;
-    position: absolute;
-    left: 36.5%;
-    margin-top: 200px;
-}
-
 .react-player {
-    position: absolute;
-    left: 27.5%;
-    bottom: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
     border: solid;
     border-color: #BDDFCC;
     background-color: #BDDFCC;

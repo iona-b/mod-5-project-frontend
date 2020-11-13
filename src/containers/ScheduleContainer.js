@@ -9,7 +9,7 @@ class ScheduleContainer extends React.Component {
 
     return (
 
-      <div>
+      <div className="home-div">
         {this.props.user.id ?
           <div>
             <Link to='/' >
@@ -25,7 +25,7 @@ class ScheduleContainer extends React.Component {
           <div>
             <img src={require("../images/background-bottom-left.png")} alt='' id="background-bottom-left"/>
             <img src={require("../images/background-top-right.png")} alt='' id="background-top-right"/>
-            <div className="info-divs">
+            <div className="centred-divs info-divs">
               <h2> Please log in to view your schedule </h2>
               <Link to='/' >
                 <button className="buttons">Home</button>

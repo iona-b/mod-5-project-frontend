@@ -10,10 +10,10 @@ class Home extends React.Component {
 
       <div>
         {this.props.token ?
-          <div id="home-div">
+          <div className="home-div">
             <img src={require("../images/background-bottom-left.png")} alt='' id="background-bottom-left"/>
             <img src={require("../images/background-top-right.png")} alt='' id="background-top-right"/>
-            <div id="home-menu" className="landing-page-elements">
+            <div className="menus landing-page-elements centred-divs">
               <NavLink to='/createschedule'>
                 <button className="menu-buttons">Create Schedule</button>
               </NavLink>
@@ -29,11 +29,11 @@ class Home extends React.Component {
             </div>
           </div>
         :
-          <div id="home-div">
+          <div className="home-div">
             <img className="landing-page-background" src={require("../images/background-bottom-left.png")} alt='' id="background-bottom-left"/>
             <img className="landing-page-background" src={require("../images/background-top-right.png")} alt='' id="background-top-right"/>
-            <img id="always-balanced-welcome" src={require("../images/always-balanced-welcome.png")} alt='' />
-            <div id="home-menu" className="pre-login">
+            <img id="always-balanced-welcome" src={require("../images/always-balanced-welcome.png")} alt='' className="centred-divs"/>
+            <div id="landing-page-menu" className="menus centred-divs">
               <h2>Welcome to Always Balanced</h2>
               <NavLink to='/login'>
                 <button className="menu-buttons">Login</button>

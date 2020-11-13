@@ -9,7 +9,7 @@ class ProfileContainer extends React.Component {
 
     return (
 
-      <div>
+      <div className="home-div">
         <Link to='/' >
           <button className="buttons back-buttons">⬅</button>
         </Link>
@@ -21,7 +21,7 @@ class ProfileContainer extends React.Component {
               <Profile />
             </div>
           :
-            <div className="info-divs">
+            <div className="centred-divs info-divs">
               <h2> Please log in to view your profile </h2>
               <Link to='/' >
                 <button className="buttons">Home</button>

@@ -32,7 +32,7 @@ class Profile extends React.Component {
         {this.state.showTasks === true ? <TasksModal handleClick={this.handleClick} /> : null }
         {this.state.showDeleteProfile === true ? <DeleteProfileModal handleClick={this.handleClick} /> : null }
         {this.state.showDeleteProfile === false && this.state.showTasks === false && this.state.showUpdateProfile === false && this.state.showUpdateRelaxationCategoryPreferences === false ?
-          <div id="profile-menu" >
+          <div className="menus centred-divs" >
             <button name="showUpdateProfile" className="menu-buttons" onClick={this.handleClick}>Update Profile</button>
             <button name="showUpdateRelaxationCategoryPreferences" className="menu-buttons" onClick={this.handleClick}>Update Relaxation Preferences</button>
             <button name="showTasks" className="menu-buttons" onClick={this.handleClick} >Update Tasks</button>

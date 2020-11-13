@@ -142,7 +142,7 @@ class Schedule extends React.Component {
 
         return (
 
-            <div className="form-containers">
+            <div className="form-containers centred-divs">
                 <div className="schedule" id={this.state.showFocusModeSchedule === true ? "focus-mode" : "regular-mode"}>
                     {
                         this.props.currentSchedule.id !== ""

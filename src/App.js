@@ -71,13 +71,13 @@ class App extends React.Component {
         {this.props.token ?
         <div>
           <div id="top-nav-bar">
-            {this.state.whiteNoisePlaying === true ? 
-              <button className="buttons" id="stop-button" onClick={this.handleToggleWhiteNoisePlaying}><span role="img" aria-label="mute-sound">🔇</span></button>
+            {/* {this.state.whiteNoisePlaying === true ? 
+              <button className=" nav-bar-buttons" id="stop-button" onClick={this.handleToggleWhiteNoisePlaying}><span role="img" aria-label="mute-sound">🔇</span></button>
             :
-              <button className="buttons" id="play-button" onClick={this.handleToggleWhiteNoisePlaying}><span role="img" aria-label="musical-note">🎵</span></button>
-            }
+              <button className="nav-bar-buttons" id="play-button" onClick={this.handleToggleWhiteNoisePlaying}><span role="img" aria-label="musical-note">🎵</span></button>
+            } */}
             <Link to='/' >
-              <img src={require("./images/always-balanced-long.png")} alt='' id="always-balanced-long" />
+              <img src={require("./images/always-balanced-long.png")} alt='' id="always-balanced-long" className="centred-divs"/>
             </Link>
             <Clock />
           </div>
@@ -109,7 +109,7 @@ class App extends React.Component {
         <div>
           <div id="top-nav-bar">
             <Link to='/' >
-              <img src={require("./images/always-balanced-long.png")} alt='' id="always-balanced-long" className="pre-login"/>
+              <img src={require("./images/always-balanced-long.png")} alt='' id="always-balanced-long" className="pre-login centred-divs"/>
             </Link>
             <Clock />
           </div>

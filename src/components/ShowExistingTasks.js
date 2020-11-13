@@ -30,7 +30,7 @@ class ShowExisitingTasks extends React.Component {
 
         return (
 
-            <div className="form-headers show-tasks" id="existing-tasks-div">
+            <div className="show-tasks">
                 <h2> Existing Tasks </h2>
                 {this.listTasks()}
             </div>

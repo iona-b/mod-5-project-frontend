@@ -41,7 +41,7 @@ class TasksModal extends React.Component {
 
             <div>
                 <button className="buttons back-buttons" name="showTasks" onClick={this.props.handleClick}>⬅</button>
-                <div className="form-containers">
+                <div className="form-containers centred-divs">
                     {this.state.showAddTaskForm === false ?
                         <div>
                             {this.props.tasks.length > 0 ?

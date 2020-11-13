@@ -23,7 +23,7 @@ class ScheduleInProgress extends React.Component {
 
     render() {
         return (
-            <div className="show-tasks" id="schedule-in-progress-div">
+            <div className="show-tasks">
                 <h2> Schedule In Progress </h2>
                 {this.props.scheduleInProgress.length > 0  ?
                     this.listScheduleTasks() 

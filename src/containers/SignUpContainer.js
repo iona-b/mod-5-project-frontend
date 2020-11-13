@@ -38,13 +38,13 @@ class SignUpContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="home-div">
         <Link to='/' >
           <button className="buttons back-buttons">⬅</button>
         </Link>
         <img src={require("../images/background-bottom-left.png")} alt='' id="background-bottom-left" />
         <img src={require("../images/background-top-right.png")} alt='' id="background-top-right" />
-        <div className="form-containers">
+        <div className="form-containers centred-divs">
           { this.state.profileCreated === false ? <SignUpForm /> : null }
           { this.state.profileCreated === true && this.state.relaxationCategoriesChosen === false ? <ChooseRelaxationCategories /> : null }
           { this.state.profileCreated === true && this.state.relaxationCategoriesChosen === true && this.state.initialToDosCreated === false ?

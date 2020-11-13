@@ -30,7 +30,7 @@ class UpdateProfileModal extends React.Component {
             
             <div>
                 <button className="buttons back-buttons" name="showUpdateProfile" onClick={this.props.handleClick}>⬅</button>
-                <div className="form-containers">
+                <div className="form-containers centred-divs">
                     <div>
                         <h2 className="form-headers">Update Your Profile</h2>
                         <form onSubmit={(event) => this.handleSubmit(event)}>
